@@ -57,10 +57,10 @@ $(function(){
 		var resultWidth;
 		if(v <= 0.1){
 			resultWidth = 15;
-		}else if(v >= 15){
+		}else if(v >= 20){
 			resultWidth = 1;
 		}else{
-			resultWidth = 15 - (v - 0.1)/(10 - 0.1) * (15 - 1);//可以把0.1和1看作0来理解
+			resultWidth = 15 - (v - 0.1)/(20 - 0.1) * (15 - 1);//可以把0.1和1看作0来理解
 		}
 		if(lastLineWidth === -1){
 			return resultWidth;
